@@ -15,9 +15,9 @@
   - cd /etc/profile.d/
   - vim kafka.sh
 7) Add followingn lines to kafka.sh 
-   export KAFKA_HOME="/opt/kafka/kafka_2.12-1.0.0"
-   JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-   export PATH=${KAFKA_HOME}/bin:${PATH}
+   - export KAFKA_HOME="/opt/kafka/kafka_2.12-1.0.0"
+   - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+   - export PATH=${KAFKA_HOME}/bin:${PATH}
 8) Now make it executable and apply configuration
   - chmod +x kafka.sh
   - source kafka.sh
@@ -28,6 +28,5 @@
    - sudo systemctl start zookeeper
 12) Check status
    - sudo systemctl status zookeeper
-    zookeeper system start up file is located at /etc/systemd/system/multi-user.target.wants/zookeeper.service
 13) Start kakfa
-    -sudo kafka-server-start.sh /etc/kafka.properties
+   - sudo kafka-server-start.sh /etc/kafka.properties
